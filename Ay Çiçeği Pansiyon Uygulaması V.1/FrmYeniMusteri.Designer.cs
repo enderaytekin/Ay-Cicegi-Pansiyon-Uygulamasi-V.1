@@ -60,12 +60,16 @@
             this.bttnDoluOda = new System.Windows.Forms.Button();
             this.txtUcret = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbBxCinsiyet = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbBxCinsiyet);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtUcret);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.bttnKaydet);
@@ -87,7 +91,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 382);
+            this.groupBox1.Size = new System.Drawing.Size(333, 405);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgiler";
@@ -95,9 +99,9 @@
             // bttnKaydet
             // 
             this.bttnKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnKaydet.Location = new System.Drawing.Point(145, 324);
+            this.bttnKaydet.Location = new System.Drawing.Point(145, 359);
             this.bttnKaydet.Name = "bttnKaydet";
-            this.bttnKaydet.Size = new System.Drawing.Size(129, 46);
+            this.bttnKaydet.Size = new System.Drawing.Size(129, 34);
             this.bttnKaydet.TabIndex = 34;
             this.bttnKaydet.Text = "KAYDET";
             this.bttnKaydet.UseVisualStyleBackColor = true;
@@ -105,7 +109,7 @@
             // dtTmPckrCikisTarihi
             // 
             this.dtTmPckrCikisTarihi.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtTmPckrCikisTarihi.Location = new System.Drawing.Point(115, 288);
+            this.dtTmPckrCikisTarihi.Location = new System.Drawing.Point(115, 323);
             this.dtTmPckrCikisTarihi.Name = "dtTmPckrCikisTarihi";
             this.dtTmPckrCikisTarihi.Size = new System.Drawing.Size(200, 27);
             this.dtTmPckrCikisTarihi.TabIndex = 33;
@@ -113,7 +117,7 @@
             // dtTmPckrGirisTarihi
             // 
             this.dtTmPckrGirisTarihi.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dtTmPckrGirisTarihi.Location = new System.Drawing.Point(115, 255);
+            this.dtTmPckrGirisTarihi.Location = new System.Drawing.Point(115, 290);
             this.dtTmPckrGirisTarihi.Name = "dtTmPckrGirisTarihi";
             this.dtTmPckrGirisTarihi.Size = new System.Drawing.Size(200, 27);
             this.dtTmPckrGirisTarihi.TabIndex = 32;
@@ -122,7 +126,7 @@
             // 
             this.mskdTxtBxTelefon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.mskdTxtBxTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskdTxtBxTelefon.Location = new System.Drawing.Point(115, 90);
+            this.mskdTxtBxTelefon.Location = new System.Drawing.Point(115, 125);
             this.mskdTxtBxTelefon.Mask = "(999) 000-0000";
             this.mskdTxtBxTelefon.Name = "mskdTxtBxTelefon";
             this.mskdTxtBxTelefon.Size = new System.Drawing.Size(200, 27);
@@ -131,8 +135,9 @@
             // txtOdaNumarasi
             // 
             this.txtOdaNumarasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtOdaNumarasi.Enabled = false;
             this.txtOdaNumarasi.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOdaNumarasi.Location = new System.Drawing.Point(115, 189);
+            this.txtOdaNumarasi.Location = new System.Drawing.Point(115, 224);
             this.txtOdaNumarasi.Name = "txtOdaNumarasi";
             this.txtOdaNumarasi.Size = new System.Drawing.Size(200, 27);
             this.txtOdaNumarasi.TabIndex = 30;
@@ -141,7 +146,7 @@
             // 
             this.txtTCKimlikNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtTCKimlikNo.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTCKimlikNo.Location = new System.Drawing.Point(115, 153);
+            this.txtTCKimlikNo.Location = new System.Drawing.Point(115, 188);
             this.txtTCKimlikNo.Name = "txtTCKimlikNo";
             this.txtTCKimlikNo.Size = new System.Drawing.Size(200, 27);
             this.txtTCKimlikNo.TabIndex = 29;
@@ -150,7 +155,7 @@
             // 
             this.txtMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtMail.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMail.Location = new System.Drawing.Point(115, 120);
+            this.txtMail.Location = new System.Drawing.Point(115, 155);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(200, 27);
             this.txtMail.TabIndex = 28;
@@ -177,7 +182,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(35, 294);
+            this.label8.Location = new System.Drawing.Point(35, 329);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 17);
             this.label8.TabIndex = 25;
@@ -187,7 +192,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 260);
+            this.label7.Location = new System.Drawing.Point(36, 295);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 17);
             this.label7.TabIndex = 24;
@@ -197,7 +202,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 194);
+            this.label6.Location = new System.Drawing.Point(11, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 17);
             this.label6.TabIndex = 23;
@@ -207,7 +212,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 159);
+            this.label5.Location = new System.Drawing.Point(19, 194);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 17);
             this.label5.TabIndex = 22;
@@ -217,7 +222,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(73, 127);
+            this.label4.Location = new System.Drawing.Point(73, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 17);
             this.label4.TabIndex = 21;
@@ -227,7 +232,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(55, 96);
+            this.label3.Location = new System.Drawing.Point(55, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 20;
@@ -266,7 +271,7 @@
             this.groupBox2.Controls.Add(this.bttnOda101);
             this.groupBox2.Location = new System.Drawing.Point(339, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(333, 336);
+            this.groupBox2.Size = new System.Drawing.Size(333, 359);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Odalar";
@@ -275,128 +280,139 @@
             // 
             this.bttnOda101.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda101.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda101.Location = new System.Drawing.Point(28, 67);
+            this.bttnOda101.Location = new System.Drawing.Point(28, 72);
             this.bttnOda101.Name = "bttnOda101";
             this.bttnOda101.Size = new System.Drawing.Size(70, 40);
             this.bttnOda101.TabIndex = 0;
             this.bttnOda101.Text = "101";
             this.bttnOda101.UseVisualStyleBackColor = false;
+            this.bttnOda101.Click += new System.EventHandler(this.bttnOda101_Click);
             // 
             // bttnOda102
             // 
             this.bttnOda102.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda102.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda102.Location = new System.Drawing.Point(132, 67);
+            this.bttnOda102.Location = new System.Drawing.Point(132, 72);
             this.bttnOda102.Name = "bttnOda102";
             this.bttnOda102.Size = new System.Drawing.Size(70, 40);
             this.bttnOda102.TabIndex = 1;
             this.bttnOda102.Text = "102";
             this.bttnOda102.UseVisualStyleBackColor = false;
+            this.bttnOda102.Click += new System.EventHandler(this.bttnOda102_Click);
             // 
             // bttnOda103
             // 
             this.bttnOda103.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda103.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda103.Location = new System.Drawing.Point(233, 67);
+            this.bttnOda103.Location = new System.Drawing.Point(233, 72);
             this.bttnOda103.Name = "bttnOda103";
             this.bttnOda103.Size = new System.Drawing.Size(70, 40);
             this.bttnOda103.TabIndex = 2;
             this.bttnOda103.Text = "103";
             this.bttnOda103.UseVisualStyleBackColor = false;
+            this.bttnOda103.Click += new System.EventHandler(this.bttnOda103_Click);
             // 
             // bttnOda104
             // 
             this.bttnOda104.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda104.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda104.Location = new System.Drawing.Point(28, 147);
+            this.bttnOda104.Location = new System.Drawing.Point(28, 157);
             this.bttnOda104.Name = "bttnOda104";
             this.bttnOda104.Size = new System.Drawing.Size(70, 40);
             this.bttnOda104.TabIndex = 3;
             this.bttnOda104.Text = "104";
             this.bttnOda104.UseVisualStyleBackColor = false;
+            this.bttnOda104.Click += new System.EventHandler(this.bttnOda104_Click);
             // 
             // bttnOda105
             // 
             this.bttnOda105.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda105.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda105.Location = new System.Drawing.Point(132, 147);
+            this.bttnOda105.Location = new System.Drawing.Point(132, 157);
             this.bttnOda105.Name = "bttnOda105";
             this.bttnOda105.Size = new System.Drawing.Size(70, 40);
             this.bttnOda105.TabIndex = 4;
             this.bttnOda105.Text = "105";
             this.bttnOda105.UseVisualStyleBackColor = false;
+            this.bttnOda105.Click += new System.EventHandler(this.bttnOda105_Click);
             // 
             // bttnOda106
             // 
             this.bttnOda106.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda106.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda106.Location = new System.Drawing.Point(233, 147);
+            this.bttnOda106.Location = new System.Drawing.Point(233, 157);
             this.bttnOda106.Name = "bttnOda106";
             this.bttnOda106.Size = new System.Drawing.Size(70, 40);
             this.bttnOda106.TabIndex = 5;
             this.bttnOda106.Text = "106";
             this.bttnOda106.UseVisualStyleBackColor = false;
+            this.bttnOda106.Click += new System.EventHandler(this.bttnOda106_Click);
             // 
             // bttnOda109
             // 
             this.bttnOda109.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda109.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda109.Location = new System.Drawing.Point(233, 227);
+            this.bttnOda109.Location = new System.Drawing.Point(233, 242);
             this.bttnOda109.Name = "bttnOda109";
             this.bttnOda109.Size = new System.Drawing.Size(70, 40);
             this.bttnOda109.TabIndex = 8;
             this.bttnOda109.Text = "109";
             this.bttnOda109.UseVisualStyleBackColor = false;
+            this.bttnOda109.Click += new System.EventHandler(this.bttnOda109_Click);
             // 
             // bttnOda108
             // 
             this.bttnOda108.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda108.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda108.Location = new System.Drawing.Point(132, 227);
+            this.bttnOda108.Location = new System.Drawing.Point(132, 242);
             this.bttnOda108.Name = "bttnOda108";
             this.bttnOda108.Size = new System.Drawing.Size(70, 40);
             this.bttnOda108.TabIndex = 7;
             this.bttnOda108.Text = "108";
             this.bttnOda108.UseVisualStyleBackColor = false;
+            this.bttnOda108.Click += new System.EventHandler(this.bttnOda108_Click);
             // 
             // bttnOda107
             // 
             this.bttnOda107.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnOda107.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnOda107.Location = new System.Drawing.Point(28, 227);
+            this.bttnOda107.Location = new System.Drawing.Point(28, 242);
             this.bttnOda107.Name = "bttnOda107";
             this.bttnOda107.Size = new System.Drawing.Size(70, 40);
             this.bttnOda107.TabIndex = 6;
             this.bttnOda107.Text = "107";
             this.bttnOda107.UseVisualStyleBackColor = false;
+            this.bttnOda107.Click += new System.EventHandler(this.bttnOda107_Click);
             // 
             // bttnBosOda
             // 
             this.bttnBosOda.BackColor = System.Drawing.Color.GreenYellow;
             this.bttnBosOda.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnBosOda.Location = new System.Drawing.Point(572, 342);
+            this.bttnBosOda.Location = new System.Drawing.Point(572, 365);
             this.bttnBosOda.Name = "bttnBosOda";
             this.bttnBosOda.Size = new System.Drawing.Size(70, 40);
             this.bttnBosOda.TabIndex = 9;
             this.bttnBosOda.Text = "BOŞ";
             this.bttnBosOda.UseVisualStyleBackColor = false;
+            this.bttnBosOda.Click += new System.EventHandler(this.bttnBosOda_Click);
             // 
             // bttnDoluOda
             // 
             this.bttnDoluOda.BackColor = System.Drawing.Color.Red;
             this.bttnDoluOda.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnDoluOda.Location = new System.Drawing.Point(471, 342);
+            this.bttnDoluOda.Location = new System.Drawing.Point(471, 365);
             this.bttnDoluOda.Name = "bttnDoluOda";
             this.bttnDoluOda.Size = new System.Drawing.Size(70, 40);
             this.bttnDoluOda.TabIndex = 10;
             this.bttnDoluOda.Text = "DOLU";
             this.bttnDoluOda.UseVisualStyleBackColor = false;
+            this.bttnDoluOda.Click += new System.EventHandler(this.bttnDoluOda_Click);
             // 
             // txtUcret
             // 
             this.txtUcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUcret.Location = new System.Drawing.Point(115, 222);
+            this.txtUcret.Location = new System.Drawing.Point(115, 257);
             this.txtUcret.Name = "txtUcret";
             this.txtUcret.Size = new System.Drawing.Size(200, 27);
             this.txtUcret.TabIndex = 36;
@@ -405,11 +421,34 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(66, 227);
+            this.label9.Location = new System.Drawing.Point(66, 262);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(43, 17);
             this.label9.TabIndex = 35;
             this.label9.Text = "Ücret:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(51, 96);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 17);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Cinsiyet:";
+            // 
+            // cmbBxCinsiyet
+            // 
+            this.cmbBxCinsiyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.cmbBxCinsiyet.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbBxCinsiyet.FormattingEnabled = true;
+            this.cmbBxCinsiyet.Items.AddRange(new object[] {
+            "BAY",
+            "BAYAN"});
+            this.cmbBxCinsiyet.Location = new System.Drawing.Point(115, 90);
+            this.cmbBxCinsiyet.Name = "cmbBxCinsiyet";
+            this.cmbBxCinsiyet.Size = new System.Drawing.Size(200, 28);
+            this.cmbBxCinsiyet.TabIndex = 38;
             // 
             // FrmYeniMusteri
             // 
@@ -417,7 +456,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(673, 403);
+            this.ClientSize = new System.Drawing.Size(673, 415);
             this.Controls.Add(this.bttnBosOda);
             this.Controls.Add(this.bttnDoluOda);
             this.Controls.Add(this.groupBox2);
@@ -467,5 +506,7 @@
         private System.Windows.Forms.Button bttnDoluOda;
         private System.Windows.Forms.TextBox txtUcret;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbBxCinsiyet;
+        private System.Windows.Forms.Label label10;
     }
 }

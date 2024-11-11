@@ -16,7 +16,7 @@ namespace Ay_Çiçeği_Pansiyon_Uygulaması_V._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmYeniMusteri());
+            Application.Run(new FrmAdminGiris());
         }
     }
 }

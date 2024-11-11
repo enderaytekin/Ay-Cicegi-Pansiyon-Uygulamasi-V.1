@@ -1,6 +1,6 @@
 ﻿namespace Ay_Çiçeği_Pansiyon_Uygulaması_V._1
 {
-    partial class Form1
+    partial class FrmAdminGiris
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdminGiris));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
+            this.bttnGirisYap = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,33 +59,33 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Şifre:";
             // 
-            // textBox1
+            // txtKullaniciAdi
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(196, 145);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 25);
-            this.textBox1.TabIndex = 2;
+            this.txtKullaniciAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(196, 145);
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(169, 25);
+            this.txtKullaniciAdi.TabIndex = 2;
             // 
-            // textBox2
+            // txtSifre
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(196, 176);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 25);
-            this.textBox2.TabIndex = 3;
+            this.txtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtSifre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Location = new System.Drawing.Point(196, 176);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(169, 25);
+            this.txtSifre.TabIndex = 3;
             // 
-            // button1
+            // bttnGirisYap
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(196, 219);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 33);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bttnGirisYap.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bttnGirisYap.Location = new System.Drawing.Point(196, 219);
+            this.bttnGirisYap.Name = "bttnGirisYap";
+            this.bttnGirisYap.Size = new System.Drawing.Size(169, 33);
+            this.bttnGirisYap.TabIndex = 4;
+            this.bttnGirisYap.Text = "Giriş Yap";
+            this.bttnGirisYap.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -107,7 +107,7 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Ay Çiçeği Pansiyonuna Hoşgeldiniz";
             // 
-            // Form1
+            // FrmAdminGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,14 +116,14 @@
             this.ClientSize = new System.Drawing.Size(512, 291);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bttnGirisYap);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FrmAdminGiris";
             this.Text = "Admin Giriş";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -135,9 +135,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtKullaniciAdi;
+        private System.Windows.Forms.TextBox txtSifre;
+        private System.Windows.Forms.Button bttnGirisYap;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
     }
