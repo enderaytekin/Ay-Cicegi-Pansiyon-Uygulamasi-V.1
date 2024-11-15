@@ -16,5 +16,24 @@ namespace Ay_Çiçeği_Pansiyon_Uygulaması_V._1
         {
             InitializeComponent();
         }
+
+        private void FrmAdminGiris_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttnGirisYap_Click(object sender, EventArgs e)
+        {
+            if(txtKullaniciAdi.Text == "admin" && txtSifre.Text == "12345")
+            {
+                FrmAnaForm fr = new FrmAnaForm();
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı");
+            }
+        }
     }
 }

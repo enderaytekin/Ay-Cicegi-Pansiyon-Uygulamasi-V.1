@@ -16,5 +16,18 @@ namespace Ay_Çiçeği_Pansiyon_Uygulaması_V._1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAdminGiris fr = new FrmAdminGiris();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmYeniMusteri fr = new FrmYeniMusteri();
+            fr.Show();
+        }
     }
 }

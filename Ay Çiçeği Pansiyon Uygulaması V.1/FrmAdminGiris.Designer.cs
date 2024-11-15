@@ -76,6 +76,7 @@
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(169, 25);
             this.txtSifre.TabIndex = 3;
+            this.txtSifre.UseSystemPasswordChar = true;
             // 
             // bttnGirisYap
             // 
@@ -86,6 +87,7 @@
             this.bttnGirisYap.TabIndex = 4;
             this.bttnGirisYap.Text = "Giriş Yap";
             this.bttnGirisYap.UseVisualStyleBackColor = true;
+            this.bttnGirisYap.Click += new System.EventHandler(this.bttnGirisYap_Click);
             // 
             // pictureBox1
             // 
@@ -125,6 +127,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAdminGiris";
             this.Text = "Admin Giriş";
+            this.Load += new System.EventHandler(this.FrmAdminGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
