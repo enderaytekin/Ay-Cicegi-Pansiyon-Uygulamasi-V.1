@@ -19,7 +19,7 @@ namespace Ay_Çiçeği_Pansiyon_Uygulaması_V._1
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-L5TD0TL\\SQLEXPRESS; Initial Catalog=Db_AycicegiPansiyon; Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-6NMPSDG\\SQLEXPRESS03; Initial Catalog=Db_AycicegiPansiyon; Integrated Security=True");
 
 
         private void bttnOda101_Click(object sender, EventArgs e)

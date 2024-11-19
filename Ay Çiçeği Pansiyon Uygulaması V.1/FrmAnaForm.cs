@@ -29,5 +29,11 @@ namespace Ay_Çiçeği_Pansiyon_Uygulaması_V._1
             FrmYeniMusteri fr = new FrmYeniMusteri();
             fr.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMusteriler fr = new FrmMusteriler();
+            fr.Show();
+        }
     }
 }
